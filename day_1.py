@@ -1,5 +1,4 @@
-test1 = """
-196
+test1 = """196
 197
 176
 182
@@ -2012,3 +2011,22 @@ for i in range(len(test)):
         continue
 
 print(c)
+
+newlist  = []
+for i in range(len(test)):
+    if i+2 >= len(test):
+        break
+    else:
+        s1 = int(test[i]) + int(test[i+1]) + int(test[i+2])
+        newlist.append(s1)
+
+
+for i in range(len(newlist)):
+    if i == 0:
+        d = 0
+    if newlist[i] > newlist[i-1]:
+        d+=1
+    else:
+        continue
+
+print(d)
