@@ -1,4 +1,4 @@
-with open('C:/Users/Johannes/OneDrive/Documents/PythonProgramming/projects/Advent of Code/Advent-of-Code-2021/input_day_1.txt', "r") as inputfile:
+with open('C:/Users/Johannes/OneDrive/Documents/PythonProgramming/projects/Advent of Code/Advent-of-Code-2021/day_1/input_day_1.txt', "r") as inputfile:
     test1 = inputfile.read()
 
 
