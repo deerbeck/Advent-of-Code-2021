@@ -1,4 +1,4 @@
-with open('C:/Users/Johannes/OneDrive/Documents/PythonProgramming/projects/Advent of Code/Advent-of-Code-2021/input_day_2.txt', "r") as inputfile:
+with open('C:/Users/Johannes/OneDrive/Documents/PythonProgramming/projects/Advent of Code/Advent-of-Code-2021/day_2/input_day_2.txt', "r") as inputfile:
     input_data = inputfile.read()
 
     input_list = input_data.split("\n")
