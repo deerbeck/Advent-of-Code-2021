@@ -1,4 +1,6 @@
-with open('C:/Users/Johannes/OneDrive/Documents/PythonProgramming/projects/Advent of Code/Advent-of-Code-2021/day_1/input_day_1.txt', "r") as inputfile:
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
+with open(dir_path + '\input_day_1.txt', "r") as inputfile:
     test1 = inputfile.read()
 
 
