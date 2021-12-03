@@ -1,4 +1,18 @@
 import os
+testdata = """00100
+11110
+10110
+10111
+10101
+01111
+00111
+11100
+10000
+11001
+00010
+01010"""
+
+
 ### Selfwritten function to convert a binary number that is saved as a list of integers to a decimal number
 ## Maybe expanded to a function where u get a binary number written as an integer and not a list
 def bin_to_dec(binin):
@@ -19,18 +33,6 @@ def bin_to_dec(binin):
             dec += int(bincalc[i]) * 2**i
         return dec
 
-testdata = """00100
-11110
-10110
-10111
-10101
-01111
-00111
-11100
-10000
-11001
-00010
-01010"""
 ###Functions to recursively search for the binary with the most common bit throughout every index
 def find_most_common_bin(l2:list, index:int):
     nlistz = []
