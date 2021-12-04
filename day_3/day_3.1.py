@@ -24,15 +24,12 @@ def bin_to_dec(binin:list):
 
 with open(dir_path + '\input_day_3.txt', "r") as inputfile:
     workingdata = inputfile.read()
-
-    l1 = []
     l1 = workingdata.split("\n")
     gamma = []
     for i in range(len(l1[0])):
         zcnt = 0
         ocnt = 0
         for ele in l1:
-            test = ele[i]
             if ele[i] == "0":
                 zcnt += 1
             elif ele[i] == "1":

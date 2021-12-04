@@ -14,7 +14,7 @@ testdata = """00100
 
 
 ### Selfwritten function to convert a binary number that is saved as a list of integers to a decimal number
-## Maybe expanded to a function where u get a binary number written as an integer and not a list
+## Maybe expanded to a function with string as input type
 def bin_to_dec(binin):
     if type(binin) == list:
             
@@ -33,7 +33,7 @@ def bin_to_dec(binin):
             dec += int(bincalc[i]) * 2**i
         return dec
 
-###Functions to recursively search for the binary with the most common bit throughout every index
+###Function to recursively search for the binary with the most common bit throughout every index
 def find_most_common_bin(l2:list, index:int):
     nlistz = []
     nlisto = []
@@ -53,7 +53,7 @@ def find_most_common_bin(l2:list, index:int):
     elif zcnt > ocnt:
         return find_most_common_bin(nlistz, index+1)
 
-###Functions to recursively search for the binary with the least common bit throughout every index
+###Function to recursively search for the binary with the least common bit throughout every index
 def find_least_common_bin(l2:list, index:int):
     nlistz = []
     nlisto = []
@@ -86,7 +86,3 @@ with open(dir_path + '\input_day_3.txt', "r") as inputfile:
 
     l_sup_rating = bin_to_dec(oxy_gen_rating[0]) * bin_to_dec(co_scr_rating[0])
     print(l_sup_rating)
-
-
-    
-
