@@ -76,7 +76,6 @@ def find_least_common_bin(l2:list, index:int):
 dir_path = os.path.dirname(os.path.realpath(__file__))
 with open(dir_path + '\input_day_3.txt', "r") as inputfile:
     workingdata = inputfile.read()
-    l1 = []
     l1 = workingdata.split("\n")
     oxy_gen_rating = find_most_common_bin(l1, 0)
     co_scr_rating = find_least_common_bin(l1, 0)
