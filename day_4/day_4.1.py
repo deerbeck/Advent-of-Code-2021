@@ -39,13 +39,6 @@ with open(dir_path + '\input_day_4.txt', "r") as inputfile:
                 columns[i].append(b_ele[d][i])
         
         
-        ##DIAGONALS DONT COUNT
-        # diagonal1 = []
-        # diagonal2 = []
-        # for i in range(5):
-        #     diagonal1.append(b_ele[i][i])
-        # for i in range(5):
-        #     diagonal2.append(b_ele[-(i+1)][i])
 
         ###Check which row wins the fastest!
         for ele in b_ele:
@@ -85,38 +78,3 @@ with open(dir_path + '\input_day_4.txt', "r") as inputfile:
                         break
         print(w_element)
         print(p)
-
-        ##Hatte kein bock mehr alle unmarkierten raus zu suchen, habs erst zum schluss gelesen...
-        ##Hab dann des winning bingoboard per hand ausgerechent :D
-
-        ##DIAGONALS DONT COUNT
-        # n = 0
-        # c = 0
-        # for num in bingonumbers:
-        #     n+=1
-        #     if num in diagonal1 and c < 5:
-        #         c+=1
-        #     elif c == 5:
-        #         if n < p:
-        #             p = n
-        #             n = 0
-        #             w_element = diagonal1
-        #             break
-        #         elif n == p:
-        #             break
-        # n = 0
-        # c = 0
-        # print(w_element)
-        # for num in bingonumbers:
-        #     n+=1
-        #     if num in diagonal2 and c < 5:
-        #         c+=1
-        #     elif c == 5:
-        #         if n < p:
-        #             p = n
-        #             n = 0
-        #             w_element = diagonal2
-        #             break
-        #         elif n == p:
-        #             break
-        # print(w_element)
