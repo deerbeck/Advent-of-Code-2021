@@ -12,10 +12,9 @@ with open(dir_path + '\input_day_9.txt', "r") as inputfile:
     buf_list = workingdata.split("\n")
     worklist = []
     datalist = []
-
     for element in buf_list:
         worklist.append(list(element))
-
+    print(worklist)
     for r in range(len(worklist)):
         #check first row for low points
         if r == 0:
